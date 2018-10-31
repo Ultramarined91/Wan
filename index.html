@@ -11,6 +11,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Montserrat" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -19,6 +21,12 @@
 
       <!-- sidebar -->
       <nav id="sidebar" class="sidebar">
+        <button type="button" id="sidebar-btn" class="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="sidebar-header">
           <img src="logo.png" alt="" width="120">
         </div>
@@ -51,45 +59,162 @@
       <!-- content -->
       <div id="content" class="content">
 
-        <button type="button" id="sidebar-btn" class="sidebar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <div id="carousel-wanfoodtour" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators carousel-indicators-numbers">
             <li data-target="#carousel-wanfoodtour" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-wanfoodtour" data-slide-to="1"></li>
             <li data-target="#carousel-wanfoodtour" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="food1.jpg" alt="First slide">
+              <img class="w-100" src="food1.jpg" alt="First slide">
               <div class="carousel-caption d-md-block">
-                <h1>Slide 1</h1>
-                <p>Some words</p>
+                <h1>Singapore Food Tours</h1>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="food2.jpg" alt="Second slide">
+              <img class="w-100" src="food2.jpg" alt="Second slide">
               <div class="carousel-caption d-md-block">
                 <h1>Slide 2</h1>
-                <p>Some words</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="food3.jpg" alt="Third slide">
+              <img class="w-100" src="food3.jpg" alt="Third slide">
               <div class="carousel-caption d-md-block">
                 <h1>Slide 2</h1>
-                <p>Some words</p>
               </div>
             </div>
           </div>
         </div>
 
-      </div>
+        <div class="benefits">
+          <div class="row">
+            <div class="col-sm-4 benefit">
+              <div class="media">
+                <i class="mr-3 fas fa-shield-alt fa-4x"></i>
+                <div class="media-body mb-0">
+                  <h5>Free Cancellation</h5>
+                  <p>Free cancellation on most tour hours. Just in case things do not go as planned.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 benefit">
+              <div class="media">
+                <i class="mr-3 fas fa-award fa-4x"></i>
+                <div class="media-body">
+                  <h5>Competitive Prices</h5>
+                  <p>We make sure you get the best experience for your money worth.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 benefit">
+              <div class="media">
+                <i class="mr-3 fas fa-concierge-bell fa-4x"></i>
+                <div class="media-body">
+                  <h5>24/7 Customer Service</h5>
+                  <p>Our helpful staff is ready to assist you on any questions about our tour packages.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="section tours">
+          <div class="header">
+            <i class="fas fa-utensils fa-4x mb-3"></i>
+            <h3>Tour Highlights</h3>
+          </div>
+
+          <div class="row tour-row">
+            <div class="col-md-6 tour">
+              <img src="tour1.jpg" alt="">
+            </div>
+            <div class="col-md-3 tour">
+              <img src="tour2.jpg" alt="">
+            </div>
+            <div class="col-md-3 tour">
+              <img src="tour3.jpg" alt="">
+            </div>
+          </div>
+          <div class="row tour-row">
+            <div class="col-md-3 tour">
+              <img src="tour4.jpg" alt="">
+            </div>
+            <div class="col-md-3 tour">
+              <img src="tour5.jpg" alt="">
+            </div>
+            <div class="col-md-6 tour">
+              <img src="tour6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+
+        </div>
+
+        <div class="section events">
+          <div class="header">
+            <i class="fas fa-camera-retro fa-4x mb-3"></i>
+            <h3>Recent Tours</h3>
+          </div>
+
+          <div class="event-container">
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top" src="event1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5>Free Buffet</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+
+        </div>
+
+      </div>
     </div>
 
     <!-- bootstrap plugins -->
@@ -106,7 +231,7 @@
       });
 
       $('.carousel').carousel({
-        interval: 3000
+        interval: 5000
       })
     </script>
 
