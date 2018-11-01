@@ -60,6 +60,7 @@ div[class^=container] {
 
 .sidebar li {
   padding-bottom: 20px;
+  list-style: none;
 }
 
 .sidebar a {
@@ -103,14 +104,14 @@ div[class^=container] {
 .social-media {
   width: 80%;
   display: flex;
-  border-top: 0.5px solid #A9A9A9;
+  border-top: 0.5px solid #EFEFEF;
   padding-top: 20px;
   margin-top: auto;
   justify-content: space-around;
 }
 
 .social-media i {
-  color: #A9A9A9;
+  color: #EFEFEF;
 }
 
 .sidebar-btn {
@@ -172,6 +173,10 @@ div[class^=container] {
   width: 100%;
 }
 
+.carousel-inner {
+  position: relative;
+}
+
 .carousel-item {
   height: 100vh;
 }
@@ -214,6 +219,31 @@ div[class^=container] {
 .carousel-indicators-numbers li:hover {
   border: 1px solid #FF3B3F;
   background: none;
+}
+
+.button-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-btn {
+  margin-top: 200px;
+  background: #FF3B3F;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-btn:focus {
+  outline: none;
 }
 
 .section {
@@ -303,6 +333,11 @@ div[class^=container] {
 
 .card-img-top {
   border-radius: 0;
+}
+
+.footer {
+  height: 30px;
+  background: #17202A;
 }
 
 /* mobile styles */
