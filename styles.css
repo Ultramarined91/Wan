@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
@@ -59,6 +60,25 @@ div[class^=col] {
   margin-bottom: 50px;
 }
 
+.sidebar .navigation {
+  padding-right: 30px;
+  overflow-y: scroll;
+}
+
+.sidebar .navigation::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.sidebar .navigation::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.sidebar .navigation::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #EFEFEF;
+  outline: none;
+}
+
 .sidebar.active {
   margin-left: -250px;
 }
@@ -70,6 +90,7 @@ div[class^=col] {
 
 .sidebar a {
   color: #A9A9A9;
+  padding-bottom: 2px;
   text-decoration: none;
 }
 
@@ -80,13 +101,12 @@ div[class^=col] {
 
 .sidebar a:hover {
   color: #EFEFEF;
-  border-bottom: 1px solid #FF3B3F;
 }
 
 .sidebar a.current {
   color: #FF3B3F;
-  font-weight: bold;
-  border-bottom: 1px solid #FF3B3F;
+  font-weight: 800;
+  border-bottom: 2px solid #FF3B3F;
 }
 
 .sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -95,7 +115,7 @@ div[class^=col] {
 
 .sidebar ul ul li {
   padding-left: 20px;
-  border-left: 1px solid #FF3B3F;
+  border-left: 2px solid #FF3B3F;
 }
 
 .sidebar ul ul li:first-of-type {
