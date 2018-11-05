@@ -458,7 +458,7 @@ div[class^=col] {
 .stats {
   color: white;
   width: 100%;
-  background-image: url(food-pattern.jpg);
+  background-image: url(../images/food-pattern.jpg);
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
