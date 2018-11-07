@@ -1,107 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
-    <title>Wan Food Tour</title>
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+  <title>Little Lion</title>
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merienda|Montserrat" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/mich-styles.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/mich-styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <div class="wrapper">
+<body>
+  <div class="wrapper">
 
-      <!-- sidebar -->
-      <nav id="sidebar" class="sidebar">
-        <button type="button" id="sidebar-btn" class="sidebar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <!-- sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <button type="button" id="sidebar-btn" class="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <div class="sidebar-header">
-          <img src="images/logo.png" alt="" width="120">
+      <div class="sidebar-header">
+        <img src="images/logo.png" alt="" width="120">
+      </div>
+
+      <ul class="list-unstyled components navigation">
+        <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+        <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
+        <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
+          <ul class="collapse" id="tours-submenu">
+            <li><a href="#" class="current">THEMED</a></li>
+            <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
+          </ul>
+        </li>
+        <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+        <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+        <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
+          <ul class="collapse" id="contact-submenu">
+            <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+            <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="social-media">
+        <i class="fab fa-facebook-f fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+        <i class="fab fa-tripadvisor fa-lg"></i>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div id="content" class="content">
+
+      <div class="banner">
+        <img class="w-100" src="images/aboutus/aboutus-banner.jpg" alt="">
+        <div class="carousel-caption d-md-block">
+          <h1><strong>Tours</strong></h1>
         </div>
-        <ul class="list-unstyled components navigation">
-          <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
-          <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
-          <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
-            <ul class="collapse" id="tours-submenu">
-              <li><a href="#" class="current">THEMED</a></li>
-              <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
-            </ul>
-          </li>
-          <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
-          <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
-          <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
-            <ul class="collapse" id="contact-submenu">
-              <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
-              <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
-            </ul>
-          </li>
-        </ul>
+      </div>
 
-        <div class="social-media">
-          <i class="fab fa-facebook-f fa-lg"></i>
-          <i class="fab fa-instagram fa-lg"></i>
-          <i class="fab fa-tripadvisor fa-lg"></i>
+      <div class="section welcome">
+        <h2>Tours</h2>
+        <p>
+          Jiak jiak jiak jiak! Don't say bo jio ah!
+        </p>
+      </div>
+
+      <!-- Standard tour 1 -->
+      <div class="all-tours">
+        <img src="images/theme/dimsum-background.jpg" >
+        <div class="tour-description-left">
+          <h2>
+            <strong>Chinatown Food Tour</strong><br>
+            Explore Chinatown with your taste buds!
+          </h2>
+          <div class="row">
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-calendar-alt"></i><br>
+                Tuesdays
+              </p>
+            </div>
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-clock"></i><br>
+                3 hours
+              </p>
+            </div>
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="fas fa-dollar-sign"></i><br>
+                From $90/pax
+              </p>
+            </div>
+          </div>
+          <p>
+            The local hawker scene was once unpopular among the millennial crowd with the cafe trend kicking in years back. However, traditional local food can only be found hidden in hawker centres, leading to the surge in hawkers’ popularity as millennials look for a dish that gives them a blast from the past.<br><br>
+            Chinatown has always been known to be an “old people” district, but that also means that many hawkers have set up shop there selling local delights that these elderly ate as a staple.<br><br>
+            The Chinatown Complex Food Centre boasts over 200 stalls, but here are 10 that caught my eye and delighted my stomach.
+          </p>
+          <p>
+            <button type="button" href="#" class="book-btn hvr-sweep-to-right" name="book-btn">Book now</button>
+          </p>
         </div>
-      </nav>
+      </div>
 
-      <!-- content -->
-      <div id="content" class="content">
-        <div class="banner">
-          <img class="w-100" src="images/aboutus/about.jpg" alt="First slide">
-          <div class="carousel-caption d-md-block">
-            <h1>Get to know the <br><strong>#WAN FAMILY</strong></h1>
+      <!-- Standard tour 2 -->
+      <div class="all-tours">
+        <img src="images/theme/hawker-background.jpg">
+        <div class="tour-description-right">
+          <h2>
+            <strong>Hawker Center Discovery</strong><br>
+            Discovering the hidden gems among the sea of hawkers
+          </h2>
+          <div class="row">
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-calendar-alt"></i><br>
+                Mondays
+              </p>
+            </div>
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-clock"></i><br>
+                2-3 hours
+              </p>
+            </div>
+            <div class="details col-md-3 col-sm-12">
+              <p>
+                <i class="fas fa-dollar-sign"></i><br>
+                From $100/pax
+              </p>
+            </div>
+          </div>
+          <p>
+            These are the real dishes you need to eat in Singapore before you die. I know there are still dozens of dishes in Singapore that are true to our heritage, but if I were to cover them all, this list would take you two years to finish reading.<br><br>
+            As a Singaporean, there is no excuse not to try these time-tested foods we all grew up with. As a tourist, this is a good check-list of authentic local cuisine in Singapore that you must eat when you visit.
+          </p>
+          <p>
+            <button type="button" href="#" class="book-btn hvr-sweep-to-right" name="book-btn">Book now</button>
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+        </div>
+      </footer>
+
+    </div>
+    <!-- End of Content -->
+
+    <!-- Chat bot -->
+    <div class="helpdesk">
+      <button type="button" name="button" class="help-btn" id="help-btn"><i class="fas fa-comment fa-3x"></i></button>
+      <div id="chatbox" class="chatbox">
+        <div class="top">
+          <div class="title">
+            <p><i class="fas fa-comments"></i> Live Chat</p>
+          </div>
+          <div class="cancel">
+            <button type="button" name="button" id="cancel-btn" class="cancel-btn"><i class="fas fa-times"></i></button>
           </div>
         </div>
 
-        <div class="standard-tour">
-
-        </div>
-
-
-        <footer>
-          <div class="footer">
+        <div class="chat">
+          <div class="chat-history">
           </div>
-        </footer>
-
+          <div class="message">
+            <i class="far fa-smile fa-lg"></i> &nbsp; <input type="text" name="" value="" placeholder="Type your message...">
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- bootstrap plugins -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#sidebar-btn').on('click', function() {
-          $('#sidebar, #content').toggleClass('active');
-          $(this).toggleClass('active');
-        });
+  <!-- bootstrap plugins -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="resources/numscroller-1.0.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebar-btn').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $(this).toggleClass('active');
       });
+      $('#help-btn').on('click', function() {
+        $('#chatbox').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+      $('#cancel-btn').on('click', function() {
+        $('#chatbox, #help-btn').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
 
-      $('.carousel').carousel({
-        interval: 5000
-      })
-    </script>
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  </script>
 
-  </body>
+</body>
+
 </html>

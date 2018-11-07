@@ -5,14 +5,14 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 a:focus {
@@ -46,11 +46,12 @@ div[class^=col] {
   width: 100%
   padding: 0;
   margin: 0;
-  background-color: red;
+  background-color: #ff3b3f;
 }
 .banner img {
-  width: 100%;
+  weight: 100%;
   height: 300px;
+  opacity: 0.7;
   object-fit: cover;
   object-position: center;
 }
@@ -244,7 +245,7 @@ div[class^=col] {
 
 .carousel-caption {
   position: absolute;
-  top: 20px;
+  top: 100px;
   left: 20px;
   right: 50%;
   margin: 0;
@@ -252,9 +253,8 @@ div[class^=col] {
 }
 
 .carousel-caption h1 {
-  text-align: center;
-  font-style: italic;
-  font-size: 6em;
+  text-align: left;
+  font-size: 5em;
   font-weight: 700;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
 }
@@ -690,4 +690,44 @@ div[class^=col] {
   .content.active {
     width: calc(100% - 250px);
   }
+}
+
+.all-tours {
+  position: relative;
+  min-height: 600px;
+}
+
+.all-tours img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 20px;
+}
+
+.tour-description-left {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  width: 50%;
+}
+
+.tour-description-right {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  width: 50%;
+}
+
+.details {
+  min-height: 50px;
+  padding: 5px;
+}
+
+.details p {
+  color: #FF3B3F;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
 }
