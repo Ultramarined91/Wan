@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>Wan Food Tour</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hover.css">
+
+    <!-- form -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <!-- sidebar -->
+      <nav id="sidebar" class="sidebar">
+        <button type="button" id="sidebar-btn" class="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="sidebar-header">
+          <img src="images/logo.png" alt="" width="120">
+        </div>
+        <ul class="list-unstyled components navigation">
+          <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+          <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
+          <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
+            <ul class="collapse" id="tours-submenu">
+              <li><a href="standard-tour.html" class="hvr-underline-from-center">THEMED</a></li>
+              <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
+            </ul>
+          </li>
+          <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+          <li><a href="promotions.html" class="hvr-underline-from-center">PROMOTIONS</a></li>
+          <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+          <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
+            <ul class="collapse" id="contact-submenu">
+              <li><a href="partnership.html" class="hvr-underline-from-center">PARTNERSHIP</a></li>
+              <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+              <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="social-media">
+          <i class="fab fa-facebook-f fa-lg"></i>
+          <i class="fab fa-instagram fa-lg"></i>
+          <i class="fab fa-tripadvisor fa-lg"></i>
+        </div>
+      </nav>
+
+      <!-- content -->
+      <div id="content" class="content">
+
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fab fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="info">
+          <img src="images/tours/chinatown.jpg">
+          <div class="row info-container">
+            <div class="info-content col-md-6">
+              <h2>Chinatown Tour</h2>
+              <p>
+                He taught me Tai Chi and read my fortune. She made those tarts that made me go nuts and brewed an aromatic pot of tea. Join us as we explore Chinatown, the epitome of Harmony, from traditional Chinese heritage sites to new hipster shops.
+              </p>
+              <div class="row">
+                <div class="tour-details col-md-3 col-sm-12">
+                  <p>
+                    <i class="far fa-calendar-alt"></i><br>
+                    Tuesdays<br>Sundays
+                  </p>
+                </div>
+                <div class="tour-details col-md-3 col-sm-12">
+                  <p>
+                    <i class="far fa-clock"></i><br>
+                    3 hours
+                  </p>
+                </div>
+                <div class="tour-details col-md-3 col-sm-12">
+                  <p>
+                    <i class="fas fa-dollar-sign"></i><br>
+                    From $70/pax
+                  </p>
+                </div>
+              </div>
+              <h5>Highlights</h5>
+              <p>Explore the Chinese enclave!</p>
+              <h5>Maximum group size</h5>
+              <p>The more the merrier</p>
+            </div>
+
+            <div class="info-order col-md-6">
+              <div id="booking" class="row info-booking">
+            		<form class="form">
+            			<span class="form-label">Date</span>
+            			<input class="form-control" type="date" required>
+
+            			<span class="form-label">Pax</span>
+            			<select class="form-control">
+                    <option>Select no of pax</p>
+            				<option>1</option>
+            				<option>2</option>
+            				<option>3</option>
+                    <option>4</option>
+            				<option>5</option>
+            				<option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+            				<option>9</option>
+            				<option>10</option>
+            			</select>
+            			<span class="select-arrow"></span>
+
+            			<span class="form-label">Timing</span>
+            			<select class="form-control">
+                    <option>Select a timing</option>
+            				<option>10am - 1pm</option>
+            				<option>12pm - 3pm</option>
+            				<option>5pm - 8pm</option>
+            			</select>
+            			<span class="select-arrow"></span>
+
+                  <span class="form-label">Promo code</span>
+                  <input class="form-control" type="text">
+
+                  <div class="button-box">
+                    <button type="button" href="#" class="book-btn hvr-sweep-to-right" name="job-btn">Book now</button>
+                  </div>
+            		</form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section red-bg subscribe">
+          <h3>Subscribe</h3>
+          <p>Sign up with us and recieve frequent updates!</p>
+          <form>
+            <input type="text" name="" value="" placeholder="First Name">
+            <input type="text" name="" value="" placeholder="Last Name">
+            <input type="text" name="" value="" placeholder="Email">
+            <button type="button" name="button">Submit</button>
+          </form>
+        </div>
+
+        <footer>
+          <div class="section footer">
+            <div class="row">
+              <div class="col-md-3 foot-part">
+                <div class="">
+                  <h5>About Us</h5>
+                  <p>No. 1 Private Walking Tour operator in Singapore. We focus on local authentic experiences, hidden gems and exploring off-the-beaten paths in Singapore.</p>
+                </div>
+              </div>
+              <div class="col-md-3 food-part">
+                <div class="">
+                  <h5>Links</h5>
+                  <a href="#">Home</a> <br>
+                  <a href="#">About Us</a> <br>
+                  <a href="#">Tours</a> <br>
+                  <a href="#">Celebrity Tours</a> <br>
+                  <a href="#">Blog</a> <br>
+                  <a href="#">Support</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 food-part">
+                <div class="">
+                  <h5>Find Us</h5>
+                  <p>101 Cecil Street<br>
+                    Unit 13-12 Tong Eng Building<br>
+                    Singapore 069533
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              @ 2018 littlelion. Pte Ltd All Rights Reserved
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- bootstrap plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#sidebar-btn').on('click', function() {
+          $('#sidebar, #content').toggleClass('active');
+          $(this).toggleClass('active');
+        });
+      });
+
+      $('.carousel').carousel({
+        interval: 5000
+      })
+    </script>
+
+  </body>
+</html>

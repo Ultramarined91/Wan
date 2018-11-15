@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>Wan Food Tour</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!-- sidebar -->
+      <nav id="sidebar" class="sidebar">
+        <button type="button" id="sidebar-btn" class="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="sidebar-header">
+          <img src="images/littlelion-brand.png" alt="" height="120">
+        </div>
+        <ul class="list-unstyled components navigation">
+          <li><a href="#" class="current">HOME</a></li>
+          <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
+          <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
+            <ul class="collapse" id="tours-submenu">
+              <li><a href="standard-tour.html" class="hvr-underline-from-center">THEMED</a></li>
+              <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
+            </ul>
+          </li>
+          <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+          <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+          <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
+            <ul class="collapse" id="contact-submenu">
+              <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+              <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="social-media">
+          <i class="fab fa-facebook-f fa-lg"></i>
+          <i class="fab fa-instagram fa-lg"></i>
+          <i class="fab fa-tripadvisor fa-lg"></i>
+        </div>
+      </nav>
+
+      <!-- content -->
+      <div id="content" class="content">
+
+        <div class="section ">
+          <div class="cart-title shopping-cart">
+            <h5>Shopping Card</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="cart-main">
+                <div class="cart-title your-cart">
+                  <h4>Your Cart (2)</h4>
+                </div>
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <img src="images/item1.jpg" alt="" width="120">
+                      <h5>Durian Feast Special Tour</h5>
+                      <p>Geylang <br>
+                      30th November, 9pm to 11pm <br>
+                      Qty: 2 <br>
+                      <a href="#">Modify details <i class="far fa-edit"></i></a> </p>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <img src="images/item2.jpg" alt="" width="120">
+                      <h5>Chinatown Disocvery</h5>
+                      <p>Chinatown <br>
+                      30th November, 9pm to 11pm <br>
+                      Qty: 3 <br>
+                      <a href="#">Modify details <i class="far fa-edit"></i></a></p>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                  </div>
+                </div>
+
+                <button class="cart-btn1" type="button" name="button">Update Cart</button>
+
+              </div>
+
+
+            </div>
+            <div class="col-md-4">
+              <div class="cart-buy">
+                  <h5>Summary</h5>
+                  <div class="line">
+                    <p>Durain Tour x2</p>
+                    <p>120.00</p>
+                  </div>
+                  <div class="line">
+                    <p>Chinatown Discovery x3</strong></p>
+                    <p>36.00</p>
+                  </div>
+
+                  <div class="line">
+                    <p><strong>Subtotal</strong></p>
+                    <p><strong>$156.00</strong></p>
+                  </div>
+
+                  <div class="line promo">
+                    <input class="promocode" type="text" name="" value="" placeholder="Enter promocode">
+                    <button class="apply-btn" type="button" name="button">Apply</button>
+                  </div>
+
+                  <div class="line">
+                    <p><strong>Total</strong></p>
+                    <p><strong>$156.00</strong></p>
+                  </div>
+
+                  <button class="cart-btn1" type="button" name="button">Checkout</button>
+
+                  <button class="cart-btn2" type="button" name="button">Find More</button>
+
+              </div>
+              <div class="timer">
+                Your cart session will expire in:
+                <div class="clockdiv" id="clockdiv"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="section footer">
+            <div class="row">
+              <div class="col-md-3 foot-part">
+                <div class="">
+                  <h5>About Us</h5>
+                  <p>No. 1 Private Walking Tour operator in Singapore. We focus on local authentic experiences, hidden gems and exploring off-the-beaten paths in Singapore.</p>
+                </div>
+              </div>
+              <div class="col-md-3 food-part">
+                <div class="">
+                  <h5>Links</h5>
+                  <a href="#">Home</a> <br>
+                  <a href="#">About Us</a> <br>
+                  <a href="#">Tours</a> <br>
+                  <a href="#">Celebrity Tours</a> <br>
+                  <a href="#">Blog</a> <br>
+                  <a href="#">Support</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 food-part">
+                <div class="">
+                  <h5>Find Us</h5>
+                  <p>101 Cecil Street<br>
+                    Unit 13-12 Tong Eng Building<br>
+                    Singapore 069533
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              @ 2018 littlelion. Pte Ltd All Rights Reserved
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+      <div class="helpdesk">
+        <button type="button" name="button" class="help-btn" id="help-btn"><i class="fas fa-comment fa-3x"></i></button>
+        <div id="chatbox" class="chatbox">
+          <div class="top">
+            <div class="title">
+              <p><i class="fas fa-comments"></i> Live Chat</p>
+            </div>
+            <div class="cancel">
+              <button type="button" name="button" id="cancel-btn" class="cancel-btn"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-history">
+
+            </div>
+            <div class="message">
+                <i class="far fa-smile fa-lg"></i> &nbsp; <input type="text" name="" value="" placeholder="Type your message...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- bootstrap plugins -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="resources/numscroller-1.0.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#sidebar-btn').on('click', function() {
+          $('#sidebar, #content').toggleClass('active');
+          $(this).toggleClass('active');
+        });
+        $('#help-btn').on('click', function() {
+          $('#chatbox').toggleClass('active');
+          $(this).toggleClass('active');
+        });
+        $('#cancel-btn').on('click', function() {
+          $('#chatbox, #help-btn').toggleClass('active');
+          $(this).toggleClass('active');
+        });
+      });
+
+
+      $('.carousel').carousel({
+        interval: 5000
+      })
+
+
+      var time_in_minutes = 10;
+        var current_time = Date.parse(new Date());
+        var deadline = new Date(current_time + time_in_minutes*60*1000);
+
+
+        function time_remaining(endtime){
+        	var t = Date.parse(endtime) - Date.parse(new Date());
+        	var seconds = Math.floor( (t/1000) % 60 );
+        	var minutes = Math.floor( (t/1000/60) % 60 );
+        	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+        	var days = Math.floor( t/(1000*60*60*24) );
+        	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+        }
+        function run_clock(id,endtime){
+        	var clock = document.getElementById(id);
+        	function update_clock(){
+        		var t = time_remaining(endtime);
+        		clock.innerHTML = t.minutes+':'+t.seconds+' minutes';
+        		if(t.total<=0){ clearInterval(timeinterval); }
+        	}
+        	update_clock(); // run function once at first to avoid delay
+        	var timeinterval = setInterval(update_clock,1000);
+        }
+        run_clock('clockdiv',deadline);
+
+    </script>
+
+  </body>
+</html>

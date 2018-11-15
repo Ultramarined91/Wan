@@ -1,99 +1,289 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
-    <title>Wan Food Tour</title>
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+  <title>Little Lion</title>
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merienda|Montserrat" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/mich-styles.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hover.css">
+</head>
 
-  <body>
-    <div class="wrapper">
+<body>
+  <div class="wrapper">
 
-      <!-- sidebar -->
-      <nav id="sidebar" class="sidebar">
-        <button type="button" id="sidebar-btn" class="sidebar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <!-- sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <button type="button" id="sidebar-btn" class="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <div class="sidebar-header">
-          <img src="images/logo.png" alt="" width="120">
+      <div class="sidebar-header">
+        <img src="images/logo.png" alt="" width="120">
+      </div>
+
+      <ul class="list-unstyled components navigation">
+        <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+        <li><a href="#" class="hvr-underline-from-center">ABOUT US</a></li>
+        <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
+          <ul class="collapse" id="tours-submenu">
+            <li><a href="standard-tour.html" class="hvr-underline-from-center">THEMED</a></li>
+            <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
+          </ul>
+        </li>
+        <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+        <li><a href="promotions.html" class="hvr-underline-from-center">PROMOTIONS</a></li>
+        <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
+        <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="current dropdown-toggle">SUPPORT &nbsp;</a>
+          <ul class="collapse" id="contact-submenu">
+            <li><a href="partnership.html" class="hvr-underline-from-center">PARTNERSHIP</a></li>
+            <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
+            <li><a href="faq.html" class="current">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="social-media">
+        <i class="fab fa-facebook-f fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+        <i class="fab fa-tripadvisor fa-lg"></i>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div id="content" class="content">
+
+      <div class="banner">
+        <img class="w-100" src="images/aboutus/aboutus-banner.jpg" alt="">
+      </div>
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="section">
+        <div class="welcome">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Curious little lions.
+          </p>
         </div>
-        <ul class="list-unstyled components navigation">
-          <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
-          <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
-          <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
-            <ul class="collapse" id="tours-submenu">
-              <li><a href="standard-tour.html" class="hvr-underline-from-center">THEMED</a></li>
-              <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
-            </ul>
-          </li>
-          <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
-          <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
-          <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
-            <ul class="collapse" id="contact-submenu">
-              <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
-              <li><a href="#" class="current">FAQ</a></li>
-            </ul>
-          </li>
-        </ul>
+      </div>
 
-        <div class="social-media">
-          <i class="fab fa-facebook-f fa-lg"></i>
-          <i class="fab fa-instagram fa-lg"></i>
-          <i class="fab fa-tripadvisor fa-lg"></i>
+      <div class="section faq">
+
+        <button class="accordion">Who is Little Lion?</button>
+        <div class="panel">
+          <p>
+            Hello! Little Lion is a young tour operator in Singapore, managed by a team of dedicated, passionate and fun loving locals on this Little Red Dot. <br><br>
+            Our idea of travel is "There is something for everyone", therefore we develop and run a series of special interest tours filled with our own unique tour content. All tours are conducted by our in-house guides (you can't find them anywhere else!) and we take pride in giving our best service and experience to you. <br><br>
+            Therefore, if you are looking for an experience that is interesting and unqiue, no matter you're local or tourist, look no further. Little Lion is here!
+          </p>
         </div>
-      </nav>
 
-      <!-- content -->
-      <div id="content" class="content">
-        <div class="banner">
-          <img class="w-100" src="images/aboutus/about.jpg" alt="First slide">
-          <div class="carousel-caption d-md-block">
-            <h1>Get to know the <br><strong>#WAN FAMILY</strong></h1>
+        <button class="accordion">Are you a licensed travel agency?</button>
+        <div class="panel">
+          <p>
+            Yes, Little Lion is managed by NTU Travels Pte Ltd, a licensed travel agency in Singapore registered under Singapore NTU Tourism Board (TA license no. is 02024).
+          </p>
+        </div>
+
+        <button class="accordion">Apart from the listed tours, what other services do you offer?</button>
+        <div class="panel">
+          <p>
+            We arrange organised tours for corporate, schools and VIPs. We have handled a healthy list of clientele and the list is growing. Please drop us an email for arrangements.
+          </p>
+        </div>
+
+        <button class="accordion">What are your payment methods?</button>
+        <div class="panel">
+          <p>
+            We accept online payments via credit cards (i.e. Visa, Master & AMEX) using secured payment gateways. Booking fee may apply. We also accept bank transfers for offline bookings.
+          </p>
+        </div>
+
+        <button class="accordion">How do we reach out for enquires or feedbacks?</button>
+        <div class="panel">
+          <p>
+            After each tour, we always look forward to hear how we fared. We encourage all feedbacks and recommendations for us to provide better service and improve the quality of our tours. We also encourage honest and fair assessments of our tours on Tripadvisor and other social media platforms. <br><br>
+            For any other enquries, please feel free to write to us at info@littlelion.com.
+          </p>
+        </div>
+
+        <button class="accordion">What are themed tours?</button>
+        <div class="panel">
+          <p>
+            These are day tour itineraries carefully designed and curated by our team that focus on special themes that showcase the best of Singapore. <br><br>
+            They are popular with travellers with specific or niche travel interests or those who enjoy unique and interesting travel experiences. <br><br>
+            We have at least 3 themed tour running every week.
+          </p>
+        </div>
+
+        <button class="accordion">Why are the tours "first-come-first-served" ?</button>
+        <div class="panel">
+          <p>
+            Yes, all our themed tours are on first-come-first-served basis, i.e. we only service 20 pax per themed tour per available tour date.<br><br>
+            For example:<br>
+            Our Michelin Food Tour is available on 29 & 31 Dec. If a group of 20 book the food tour on 29 Dec, the tour slot for 29 Dec would be closed immediately. Another group who is interested in the tour cannot book for 29 Dec but can still book for 31 Dec. <br><br>
+            By servicing only one booking, we ensure that we always provide dedicated private tour service and an exclusive tour experience with great value.
+          </p>
+        </div>
+
+        <button class="accordion">Why can't I book the tour on a certain date?</button>
+        <div class="panel">
+          <p>
+            You can't book a tour in the following circumstances:<br>
+            1) the tour is not available on that day of the week<br>
+            2) the tour is already sold out on that date.<br><br>
+            We also block out certain dates due to scheduled private tours or holidays.
+          </p>
+        </div>
+
+        <button class="accordion">Can I customise a tour?</button>
+        <div class="panel">
+          <p>
+            Yes if you are unable to book a day tour or require some higher level of customisation (e.g. big group size), you can customise your day tour by clicking <a href="contact.html">here</a> to fill in an enquiry form.
+          </p>
+        </div>
+
+        <button class="accordion">What is the cancellation policy?</button>
+        <div class="panel">
+          <p>
+            You convenience is our priority! If you cancel at least 24hours in advance of the scheduled departure, there is no cancellation fee. However, if you cancel within 24 hours of the scheduled departure, there is a 50 percent cancellation fee.<br><br>
+            Note that any refund is subject to deduction of expenses already incurred (e.g. activity & transport reservations) and the decision of the company for refund is final.
+          </p>
+        </div>
+
+        <button class="accordion">Are the tours suitable for children?</button>
+        <div class="panel">
+          <p>
+            No problem as long as there is adult supervision and the children can eat!
+          </p>
+        </div>
+
+        <button class="accordion">Can I take photos & videos during the tour?</button>
+        <div class="panel">
+          <p>
+            Yes definitely! We want you to share our beautiful country with your family and friends. <br><br>
+            However, during the tour, please be considerate and give your 100% attention to our tour guide when he/she is addressing the group. An important aspect of a walking tour is to learn about interesting facts and information about the places you are covering.<br><br>
+            Take as many photos as you want of the food, the scenary and even our celebrities! Say Cheese! or ROAR!
+          </p>
+        </div>
+
+      </div>
+
+      <div class="section red-bg subscribe">
+        <h3>Subscribe</h3>
+        <p>Sign up with us and recieve frequent updates!</p>
+        <form>
+          <input type="text" name="" value="" placeholder="First Name">
+          <input type="text" name="" value="" placeholder="Last Name">
+          <input type="text" name="" value="" placeholder="Email">
+          <button type="button" name="button">Submit</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="section footer">
+          <div class="row">
+            <div class="col-md-3 foot-part">
+              <div class="">
+                <h5>About Us</h5>
+                <p>No. 1 Private Walking Tour operator in Singapore. We focus on local authentic experiences, hidden gems and exploring off-the-beaten paths in Singapore.</p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Links</h5>
+                <a href="#">Home</a> <br>
+                <a href="#">About Us</a> <br>
+                <a href="#">Tours</a> <br>
+                <a href="#">Celebrity Tours</a> <br>
+                <a href="#">Blog</a> <br>
+                <a href="#">Support</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Find Us</h5>
+                <p>101 Cecil Street<br>
+                  Unit 13-12 Tong Eng Building<br>
+                  Singapore 069533
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            @ 2018 littlelion. Pte Ltd All Rights Reserved
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- End of Content -->
+
+    <!-- Chat bot -->
+    <div class="helpdesk">
+    <button type="button" name="button" class="help-btn" id="help-btn"><i class="fas fa-comment fa-3x"></i></button>
+      <div id="chatbox" class="chatbox">
+        <div class="top">
+          <div class="title">
+            <p><i class="fas fa-comments"></i> Live Chat</p>
+          </div>
+          <div class="cancel">
+            <button type="button" name="button" id="cancel-btn" class="cancel-btn"><i class="fas fa-times"></i></button>
           </div>
         </div>
 
-        <div class="faq">
-
-        </div>
-
-
-        <footer>
-          <div class="footer">
+        <div class="chat">
+          <div class="chat-history">
           </div>
-        </footer>
-
+          <div class="message">
+            <i class="far fa-smile fa-lg"></i> &nbsp; <input type="text" name="" value="" placeholder="Type your message...">
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- bootstrap plugins -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#sidebar-btn').on('click', function() {
-          $('#sidebar, #content').toggleClass('active');
+  <!-- bootstrap plugins -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="resources/numscroller-1.0.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebar-btn').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+      $('#help-btn').on('click', function() {
+        $('#chatbox').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+      $('#cancel-btn').on('click', function() {
+          $('#chatbox, #help-btn').toggleClass('active');
           $(this).toggleClass('active');
         });
       });
@@ -103,5 +293,23 @@
       })
     </script>
 
-  </body>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+
 </html>

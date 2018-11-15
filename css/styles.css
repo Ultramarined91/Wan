@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700|Quicksand:400,700');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +8,13 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 a:focus {
@@ -42,16 +44,15 @@ div[class^=col] {
 }
 
 .banner {
-  min-height: 300px;
+  min-height: 400px;
   width: 100%
   padding: 0;
   margin: 0;
-  background-color: #ff3b3f;
 }
+
 .banner img {
   weight: 100%;
-  height: 300px;
-  opacity: 0.7;
+  height: 400px;
   object-fit: cover;
   object-position: center;
 }
@@ -210,7 +211,6 @@ div[class^=col] {
   margin: 5px auto;
 }
 
-
 /* content styles */
 .content {
   width: calc(100% - 250px);
@@ -284,9 +284,6 @@ div[class^=col] {
   background: none;
 }
 
-.button-box {
-}
-
 .book-btn {
   margin-top: 20px;
   background: #FFF;
@@ -307,6 +304,7 @@ div[class^=col] {
   margin: 10px 0;
   padding: 20px 5%;
   background-color: white;
+  font-size: 1.2em;
 }
 
 .section h2 {
@@ -334,62 +332,6 @@ div[class^=col] {
   padding-bottom: 30px;
   text-align: center;
   border-bottom: 1px solid #A9A9A9;
-  font-size: 1.2em;
-}
-
-.section {
-  font-size: 1.2em;
-}
-
-.row {
-  margin: 0;
-  width: 100%;
-}
-
-.benefits {
-  background-color: #FFF;
-}
-
-
-.benefit {
-  color: #A9A9A9;
-  margin-bottom: 20px;
-}
-
-.benefit img {
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 10px;
-}
-
-.benefit p {
-  margin: 0;
-  text-align: center;
-}
-
-.tours {
-}
-
-.tour {
-  position: relative;
-  height: 200px;
-  padding: 0;
-  margin: 0 10px;
-  margin-bottom: 20px;
-}
-
-.tour img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-.tour img.celebrity {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: top;
 }
 
 .overlay {
@@ -405,14 +347,10 @@ div[class^=col] {
   background-color: rgba(0, 0, 0, 0.5); ;
 }
 
-.tour:hover .overlay {
-  opacity: 1;
-}
-
 .detail {
   width: 100%;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -427,9 +365,59 @@ div[class^=col] {
   margin: 5px;
 }
 
-.detail p strong{
+.detail p strong {
   font-style: italic;
   color: #FF3B3F;
+}
+
+.row {
+  margin: 0;
+  width: 100%;
+}
+
+.awards {
+  background-color: #FFF;
+}
+
+.award {
+  color: #A9A9A9;
+  margin-bottom: 20px;
+}
+
+.award img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.award p {
+  margin: 0;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+  height: 200px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.featured img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.featured img .celebrity {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.featured:hover .overlay {
+  opacity: 1;
 }
 
 .read-more {
@@ -455,7 +443,7 @@ div[class^=col] {
   cursor: pointer;
 }
 
-.stats {
+.red-bg {
   color: white;
   width: 100%;
   background-image: url(../images/food-pattern.jpg);
@@ -463,6 +451,26 @@ div[class^=col] {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.gray-bg {
+  color: white;
+  width: 100%;
+  background-image: url(../images/food-pattern.jpg);
+  background-repeat: repeat;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red-bg p,
+.gray-bg p {
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .stat-row {
@@ -481,8 +489,9 @@ div[class^=col] {
   margin-bottom: 0px;
 }
 
+
 .review {
-  margin: 10px;
+  margin-bottom: 10px;
   padding-right: 5px;
 }
 
@@ -493,50 +502,172 @@ div[class^=col] {
   margin: 0 auto;
 }
 
+.review p {
+  text-align: center;
+}
+
 .stars {
   margin: 10px 0;
   color: gold;
   text-align: center;
 }
 
-.review p {
-  text-align: center;
-}
-
-.event-container {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.event-container::-webkit-scrollbar {
-    width: 1em;
-}
-
-.event-container::-webkit-scrollbar-track {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
-}
-
-.event-container::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #EFEFEF;
-  outline: 1px solid slategrey;
-}
-
-.events .card {
-  display: block;
-  min-width: 200px;
-  margin-right: 20px;
-  border: none;
-}
-
-.card-img-top {
-  border-radius: 0;
-}
-
+/* footer */
 .footer {
-  height: 30px;
+  color: #EFEFEF;
+  margin: 0;
   background: #17202A;
+  background-image: url(../images/sg-city.png);
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: bottom right;
+}
+
+.food-part {
+  display: flex;
+  justify-content: center;
+}
+
+.food-part div {
+  width: fit-content;
+}
+
+.footer h5 {
+  font-size: 1.2em;
+  font-weight: 800;
+  border-bottom: 1.5px solid #FF3B3F;
+}
+
+.footer a {
+  color: #EFEFEF;
+}
+
+.footer p {
+  color: #EFEFEF;
+}
+
+.subscribe {
+  margin-bottom: 0;
+}
+
+.subscribe p {
+ color: white;
+}
+
+.subscribe input {
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  margin-right: 5px;
+  height: 30px;
+}
+
+.subscribe button {
+  font-size: 700;
+  padding: 0 5px;
+  border: none;
+  background: #2E4053;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #A9A9A9;
+  font-size: 10px;
+}
+
+/* pop up styles */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 15px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* social media bar */
+.icon-bar {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 19px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.instagram {
+  background: #c82169;
+  color: white;
+}
+
+.checked {
+    color: #FF3B3F;
 }
 
 /* helpdesk */
@@ -564,6 +695,22 @@ div[class^=col] {
 
 .help-btn i {
   color: white;
+}
+
+.cancel-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+}
+
+.cancel-btn i {
+  color: white;
+}
+
+.cancel-btn:hover i {
+  color: #A9A9A9;
 }
 
 .chatbox {
@@ -599,27 +746,6 @@ div[class^=col] {
   line-height: 50px;
 }
 
-.cancel-btn {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: none;
-}
-
-.cancel-btn i {
-  color: white;
-}
-
-.cancel-btn:hover i {
-  color: #A9A9A9;
-}
-
-.top p {
-  color: white;
-  margin: 0;
-}
-
 .chat {
   height: 400px;
   background: #EFEFEF;
@@ -636,6 +762,11 @@ div[class^=col] {
   padding: 10px 10px;
 }
 
+.top p {
+  color: white;
+  margin: 0;
+}
+
 .message input {
   border: none;
   font-size: 1.2em;
@@ -644,6 +775,410 @@ div[class^=col] {
 .message input:focus {
   outline: none;
 }
+
+/* about us page */
+.team {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  color: #FFF;
+}
+
+.team img {
+  border-radius: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+.team:hover .overlay {
+  opacity: 1;
+}
+
+.guide {
+  width: 100%;
+  min-height: 200px;
+  align-items: center;
+}
+
+.guide img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+.form {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: #A9A9A9;
+}
+
+/* faq */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* partnerships */
+.partner {
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.partner img {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  padding: 20px 5%;
+  margin-bottom: 20px;
+  object-fit: scale-down;
+}
+
+.partner p {
+  color: #FF3B3F;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+/* tours */
+.tours {
+  position: relative;
+  min-height: 600px;
+}
+
+.tours img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.tour-description-left {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 50%;
+}
+
+.tour-description-right {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 50%;
+}
+
+.tour-details {
+  min-height: 50px;
+  padding: 5px;
+}
+
+.tour-details p {
+  color: #FF3B3F;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* blog */
+.blog {
+  background-color: #FFF;
+}
+.post {
+  padding: 50px 50px;
+  border-bottom: 1px solid #A9A9A9;
+  margin-right: 20px;
+}
+
+.date {
+  color: #FF3B3F;
+}
+
+.post img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.blog-sidebar {
+  margin-top: 50px;
+}
+
+/* tour info */
+.info {
+  width: 100%;
+  height: 100vh;
+}
+
+.info img {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.info-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.info-content {
+  padding: 20px;
+  border: 4px solid #FFF;
+}
+
+.info-content p,
+.info-order p {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.info-img {
+  width: 100%;
+  height: 150px;
+}
+
+.info-img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info-order {
+  padding: 20px;
+  align-content: center;
+}
+
+.info-booking {
+  width: 100%;
+  height: 200px;
+}
+
+.info-booking .form {
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.info-booking .form-label {
+	display: block;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	line-height: 24px;
+	color: #fff;
+}
+
+.form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.form-control:-ms-input-placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.form-control::placeholder {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.info-booking .form input[type="date"].form-control:invalid {
+	color: rgba(82, 82, 84, 0.4);
+}
+
+.info-booking .form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.info-booking .form select.form-control+.select-arrow {
+	position: absolute;
+	right: 10px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+}
+
+.info-booking .form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.info-booking .form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* promotions */
+.coupon {
+    border: 5px dotted #bbb;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.couponcontainer {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+}
+
+.expire {
+    color: #FF3B3F;
+}
+
+/* cart */
+.cart-title {
+  padding: 20px 20px;
+  background: #E9E9E9;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.cart-main {
+  border: 1px solid #EFEFEF;
+  margin-right: 10px;
+}
+
+.cart-buy {
+  padding: 20px 20px;
+  color: #EFEFEF;
+  background: #17202A;
+}
+
+/* instagram */
+#instafeed {
+  max-width:1080px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background: white;
+
+    @media only screen and (min-width: $lg) {
+      width: 25%;
+    }
+
+    img {
+      display: block;
+      width: 20%;
+      height: 100px;
+      object-fit: scale-down;
+      object-position: center;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 /* mobile styles */
 @media only screen and (max-width: 768px) {
@@ -690,44 +1225,4 @@ div[class^=col] {
   .content.active {
     width: calc(100% - 250px);
   }
-}
-
-.all-tours {
-  position: relative;
-  min-height: 600px;
-}
-
-.all-tours img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: bottom;
-  margin-bottom: 20px;
-}
-
-.tour-description-left {
-  position: absolute;
-  top: 20px;
-  left: 80px;
-  width: 50%;
-}
-
-.tour-description-right {
-  position: absolute;
-  top: 20px;
-  right: 80px;
-  width: 50%;
-}
-
-.details {
-  min-height: 50px;
-  padding: 5px;
-}
-
-.details p {
-  color: #FF3B3F;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 20px;
 }

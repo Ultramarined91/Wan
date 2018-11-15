@@ -13,13 +13,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/hover.css">
-  <link rel="stylesheet" href="css/mich-styles.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -43,16 +42,18 @@
       <ul class="list-unstyled components navigation">
         <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
         <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
-        <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
+        <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="current dropdown-toggle">TOURS</a>
           <ul class="collapse" id="tours-submenu">
             <li><a href="#" class="current">THEMED</a></li>
             <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
           </ul>
         </li>
         <li><a href="celebrity-tour.html" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+        <li><a href="promotions.html" class="hvr-underline-from-center">PROMOTIONS</a></li>
         <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
         <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
           <ul class="collapse" id="contact-submenu">
+            <li><a href="partnership.html" class="hvr-underline-from-center">PARTNERSHIP</a></li>
             <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
             <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
           </ul>
@@ -69,42 +70,50 @@
     <!-- Content -->
     <div id="content" class="content">
 
-      <div class="banner">
-        <img class="w-100" src="images/aboutus/aboutus-banner.jpg" alt="">
-        <div class="carousel-caption d-md-block">
-          <h1><strong>Tours</strong></h1>
+      <div class="row banner">
+        <img class="w-100" src="images/theme/themed-banner.jpg" alt="">
+      </div>
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="section">
+        <div class="welcome">
+            <h2>Themed Tours</h2>
+            <p>
+              Singapore has a diverse culture and different ethnic groups. If there's one thing that brings us to a common ground, it would be our food! Let Little Lion take you through the gastronomic maze of the Lion City for a mouth-watering culinary food tour experience. Put on your walking shoes and take a delicious stroll from one dish to another, discovering Singapore, her people and culture - through <strong>food</strong>.<br><br>
+              Explore the Lion City today with our our tours below!
+            </p>
         </div>
       </div>
 
-      <div class="section welcome">
-        <h2>Tours</h2>
-        <p>
-          Jiak jiak jiak jiak! Don't say bo jio ah!
-        </p>
-      </div>
-
       <!-- Standard tour 1 -->
-      <div class="all-tours">
+      <div class="row tours">
         <img src="images/theme/dimsum-background.jpg" >
-        <div class="tour-description-left">
+        <div class="tour-description-left col-md-6 col-xs-12">
           <h2>
             <strong>Chinatown Food Tour</strong><br>
             Explore Chinatown with your taste buds!
           </h2>
           <div class="row">
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-calendar-alt"></i><br>
                 Tuesdays
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-clock"></i><br>
                 3 hours
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="fas fa-dollar-sign"></i><br>
                 From $90/pax
@@ -117,13 +126,13 @@
             The Chinatown Complex Food Centre boasts over 200 stalls, but here are 10 that caught my eye and delighted my stomach.
           </p>
           <p>
-            <button type="button" href="#" class="book-btn hvr-sweep-to-right" name="book-btn">Book now</button>
+            <a href="chinatown.html"><button type="button"class="book-btn hvr-sweep-to-right" name="book-btn">Read more</button></a>
           </p>
         </div>
       </div>
 
       <!-- Standard tour 2 -->
-      <div class="all-tours">
+      <div class="row tours">
         <img src="images/theme/hawker-background.jpg">
         <div class="tour-description-right">
           <h2>
@@ -131,19 +140,19 @@
             Discovering the hidden gems among the sea of hawkers
           </h2>
           <div class="row">
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-calendar-alt"></i><br>
                 Mondays
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-clock"></i><br>
                 2-3 hours
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="fas fa-dollar-sign"></i><br>
                 From $100/pax
@@ -160,9 +169,128 @@
         </div>
       </div>
 
-      <!-- Footer -->
+      <!-- Standard tour 3 -->
+      <div class="row tours">
+        <img src="images/theme/dimsum-background.jpg" >
+        <div class="tour-description-left">
+          <h2>
+            <strong>Chinatown Food Tour</strong><br>
+            Explore Chinatown with your taste buds!
+          </h2>
+          <div class="row">
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-calendar-alt"></i><br>
+                Tuesdays
+              </p>
+            </div>
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-clock"></i><br>
+                3 hours
+              </p>
+            </div>
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="fas fa-dollar-sign"></i><br>
+                From $90/pax
+              </p>
+            </div>
+          </div>
+          <p>
+            The local hawker scene was once unpopular among the millennial crowd with the cafe trend kicking in years back. However, traditional local food can only be found hidden in hawker centres, leading to the surge in hawkers’ popularity as millennials look for a dish that gives them a blast from the past.<br><br>
+            Chinatown has always been known to be an “old people” district, but that also means that many hawkers have set up shop there selling local delights that these elderly ate as a staple.<br><br>
+            The Chinatown Complex Food Centre boasts over 200 stalls, but here are 10 that caught my eye and delighted my stomach.
+          </p>
+          <p>
+            <a href="chinatown.html"><button type="button"class="book-btn hvr-sweep-to-right" name="book-btn">Read more</button></a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Standard tour 4 -->
+      <div class="row tours">
+        <img src="images/theme/hawker-background.jpg">
+        <div class="tour-description-right">
+          <h2>
+            <strong>Hawker Center Discovery</strong><br>
+            Discovering the hidden gems among the sea of hawkers
+          </h2>
+          <div class="row">
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-calendar-alt"></i><br>
+                Mondays
+              </p>
+            </div>
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="far fa-clock"></i><br>
+                2-3 hours
+              </p>
+            </div>
+            <div class="tour-details col-md-3 col-sm-12">
+              <p>
+                <i class="fas fa-dollar-sign"></i><br>
+                From $100/pax
+              </p>
+            </div>
+          </div>
+          <p>
+            These are the real dishes you need to eat in Singapore before you die. I know there are still dozens of dishes in Singapore that are true to our heritage, but if I were to cover them all, this list would take you two years to finish reading.<br><br>
+            As a Singaporean, there is no excuse not to try these time-tested foods we all grew up with. As a tourist, this is a good check-list of authentic local cuisine in Singapore that you must eat when you visit.
+          </p>
+          <p>
+            <button type="button" href="#" class="book-btn hvr-sweep-to-right" name="book-btn">Book now</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="section red-bg subscribe">
+        <h3>Subscribe</h3>
+        <p>Sign up with us and recieve frequent updates!</p>
+        <form>
+          <input type="text" name="" value="" placeholder="First Name">
+          <input type="text" name="" value="" placeholder="Last Name">
+          <input type="text" name="" value="" placeholder="Email">
+          <button type="button" name="button">Submit</button>
+        </form>
+      </div>
+
       <footer>
-        <div class="footer">
+        <div class="section footer">
+          <div class="row">
+            <div class="col-md-3 foot-part">
+              <div class="">
+                <h5>About Us</h5>
+                <p>No. 1 Private Walking Tour operator in Singapore. We focus on local authentic experiences, hidden gems and exploring off-the-beaten paths in Singapore.</p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Links</h5>
+                <a href="#">Home</a> <br>
+                <a href="#">About Us</a> <br>
+                <a href="#">Tours</a> <br>
+                <a href="#">Celebrity Tours</a> <br>
+                <a href="#">Blog</a> <br>
+                <a href="#">Support</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Find Us</h5>
+                <p>101 Cecil Street<br>
+                  Unit 13-12 Tong Eng Building<br>
+                  Singapore 069533
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            @ 2018 littlelion. Pte Ltd All Rights Reserved
+          </div>
         </div>
       </footer>
 
@@ -191,6 +319,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   </div>
 

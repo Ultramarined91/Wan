@@ -13,13 +13,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/hover.css">
-  <link rel="stylesheet" href="css/mich-styles.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,7 +40,7 @@
       </div>
 
       <ul class="list-unstyled components navigation">
-        <li><a href="index.html" class="current">HOME</a></li>
+        <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
         <li><a href="about-us.html" class="hvr-underline-from-center">ABOUT US</a></li>
         <li><a href="#tours-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">TOURS</a>
           <ul class="collapse" id="tours-submenu">
@@ -49,10 +48,12 @@
             <li><a href="special-tour.html" class="hvr-underline-from-center">SPECIALS</a></li>
           </ul>
         </li>
-        <li><a href="#" class="hvr-underline-from-center">CELEBRITY TOURS</a></li>
+        <li><a href="#" class="current">CELEBRITY TOURS</a></li>
+        <li><a href="promotions.html" class="hvr-underline-from-center">PROMOTIONS</a></li>
         <li><a href="blog.html" class="hvr-underline-from-center">BLOG</a></li>
         <li><a href="#contact-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SUPPORT &nbsp;</a>
           <ul class="collapse" id="contact-submenu">
+            <li><a href="partnership.html" class="hvr-underline-from-center">PARTNERSHIP</a></li>
             <li><a href="contact.html" class="hvr-underline-from-center">CONTACT</a></li>
             <li><a href="faq.html" class="hvr-underline-from-center">FAQ</a></li>
           </ul>
@@ -71,20 +72,28 @@
 
       <div class="banner">
         <img class="w-100" src="images/aboutus/aboutus-banner.jpg" alt="">
-        <div class="carousel-caption d-md-block">
-          <h1><strong>Celebrities</strong></h1>
+      </div>
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="section">
+        <div class="welcome">
+            <h2>Celebrity</h2>
+            <p>
+              Singapore has a diverse culture and different ethnic groups. If there's one thing that brings us to a common ground, it would be our food! Let Little Lion take you through the gastronomic maze of the Lion City for a mouth-watering culinary food tour experience. Put on your walking shoes and take a delicious stroll from one dish to another, discovering Singapore, her people and culture - through <strong>food</strong>.<br><br>
+              Explore the Lion City today with our our tours below!
+            </p>
         </div>
       </div>
 
-      <div class="section welcome">
-        <h2>Celebrity Tours</h2>
-        <p>
-          Jalan jalan with your  favourite celebrities and influencers! Jiak jiak jiak!
-        </p>
-      </div>
-
       <!-- Celebrity tour 1 -->
-      <div class="all-tours">
+      <div class="row tours">
         <img src="images/celebrity/michelle-background.jpg" style="object-position:top;">
         <div class="tour-description-left">
           <h2>
@@ -92,19 +101,19 @@
             Lulu, premium ah lian, Emily and Michelle
           </h2>
           <div class="row">
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-calendar-alt"></i><br>
                 Sundays
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-clock"></i><br>
                 2 hours
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="fas fa-dollar-sign"></i><br>
                 From $120/pax
@@ -122,7 +131,7 @@
       </div>
 
       <!-- Celebrity tour 2 -->
-      <div class="all-tours">
+      <div class="tours">
         <img src="images/celebrity/jianhao-background.jpg">
         <div class="tour-description-right">
           <h2>
@@ -130,19 +139,19 @@
             Let Jianhao Tan brings you around to find food in his Maserati. Just kidding.
           </h2>
           <div class="row">
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-calendar-alt"></i><br>
                 Mondays
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="far fa-clock"></i><br>
                 1 hour
               </p>
             </div>
-            <div class="details col-md-3 col-sm-12">
+            <div class="tour-details col-md-3 col-sm-12">
               <p>
                 <i class="fas fa-dollar-sign"></i><br>
                 From $100/pax
@@ -159,9 +168,51 @@
         </div>
       </div>
 
-      <!-- Footer -->
+      <div class="section red-bg subscribe">
+        <h3>Subscribe</h3>
+        <p>Sign up with us and recieve frequent updates!</p>
+        <form>
+          <input type="text" name="" value="" placeholder="First Name">
+          <input type="text" name="" value="" placeholder="Last Name">
+          <input type="text" name="" value="" placeholder="Email">
+          <button type="button" name="button">Submit</button>
+        </form>
+      </div>
+
       <footer>
-        <div class="footer">
+        <div class="section footer">
+          <div class="row">
+            <div class="col-md-3 foot-part">
+              <div class="">
+                <h5>About Us</h5>
+                <p>No. 1 Private Walking Tour operator in Singapore. We focus on local authentic experiences, hidden gems and exploring off-the-beaten paths in Singapore.</p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Links</h5>
+                <a href="#">Home</a> <br>
+                <a href="#">About Us</a> <br>
+                <a href="#">Tours</a> <br>
+                <a href="#">Celebrity Tours</a> <br>
+                <a href="#">Blog</a> <br>
+                <a href="#">Support</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 food-part">
+              <div class="">
+                <h5>Find Us</h5>
+                <p>101 Cecil Street<br>
+                  Unit 13-12 Tong Eng Building<br>
+                  Singapore 069533
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            @ 2018 littlelion. Pte Ltd All Rights Reserved
+          </div>
         </div>
       </footer>
 
